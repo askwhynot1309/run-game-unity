@@ -33,6 +33,8 @@ public class GameController : MonoBehaviour
         stepsText.text = $"Steps: {totalSteps}/{pressesRequired}";
     }
 
+    //!!!funtion left foot and right foot could just combine for 1 function no
+    //update later !
     public void OnLeftFootPressed()
     {
         if (progressBar.value < 1f)
@@ -77,7 +79,6 @@ public class GameController : MonoBehaviour
 
     void Victory()
     {
-        //victoryMessage.text = "Victory!";
         victoryMessage.gameObject.SetActive(true);
         nextStageButton.gameObject.SetActive(true);
     }
